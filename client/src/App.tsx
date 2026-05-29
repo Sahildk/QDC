@@ -27,7 +27,7 @@ export const App: React.FC = () => {
       setLoading(true);
       setError(null);
       try {
-        const res = await fetch('http://localhost:3001/api/orders');
+        const res = await fetch('http://127.0.0.1:3001/api/orders');
         if (!res.ok) {
           throw new Error(`HTTP ${res.status}`);
         }
